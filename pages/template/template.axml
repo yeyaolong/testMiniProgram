@@ -1,0 +1,19 @@
+<template name="testVarible">
+  <!-- 只能有一个根节点 -->
+  <view>
+    <view>测试传参</view>
+    <view>
+      传参： {{ userName }}
+    </view>
+  </view>
+</template>
+
+<template name="testFunction">
+  <!-- 只能有一个根节点 -->
+  <view>
+    <view>测试方法</view>
+    <view>
+      <button onTap="handleBtnClick">点我</button>
+    </view>
+  </view>
+</template>

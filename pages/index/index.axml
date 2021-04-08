@@ -1,0 +1,27 @@
+
+<view>
+  <!-- 引用模板 -->
+  <import src="../template/template.axml" />
+  <!-- 使用模板 -->
+  <!-- 测试变量 -->
+  <!-- 由父组件传参，则显示的父组件的参数 -->
+  <template is="testVarible" data="{{ userName}}" />
+  <!-- 父组件不传参也不会显示template 内自带的参数 -->
+  <template is="testVarible" />
+  
+  <!-- 测试方法 -->
+  <template is="testFunction" />
+
+  <!-- 直接使用父组件内定义的模板 -->
+  <!-- 由父组件传参，则显示的父组件的参数 -->
+  <template is="templatInParent" data="{{ userName }}" />
+  <!-- 父组件不传参也不会显示参数 -->
+  <template is="templatInParent" />
+</view>
+
+<!-- 直接在组件内定义模板 -->
+<template name="templatInParent">
+  <view>
+    直接在组件内定义模板： {{ userName }}
+  </view>
+<template>
